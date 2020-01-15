@@ -1,3 +1,5 @@
+[this thing](https://www.thingiverse.com/thing:2656594)
+
 Are you suffering from issue and can't find any way to fix it?!
 Be sure to checkout guide specified to this model, guide isn't complete yet (23.8.2018) but there are some cool tweaks you should definitelly know!
 https://3dnation504795197.wordpress.com/guide/
