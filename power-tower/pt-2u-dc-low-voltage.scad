@@ -1,4 +1,4 @@
-use <D:\_git\3d-experiments\power-tower\sixinch_enclosure.scad>
+use </home/pi/_git/3d-experiments/power-tower/sixinch_enclosure.scad>
 
 //rotate ([90,0,45]) {
 //    translate([-(155/2),0,-1.5]){
@@ -26,9 +26,10 @@ translate([19.05 * 2,0,0]) {
 module  dualBannana() {
 translate([31.25,(42.15  
     - 19.05)/2,-1]) {
-    # cylinder(6,d=4, false);
+    # cylinder(6,d=5.5, false);
     translate([0,19.05,0]) {
-       # cylinder(6,d=4, false);
+       # cylinder(6,d=5.5
+        , false);
 
     }
   }
