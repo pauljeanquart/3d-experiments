@@ -5,8 +5,8 @@ rotate ([90,0,45]) {
       difference(){
       sidepanel(2,false);
 
-      translate([155/2-9,(28-22)/2,-2]) {
-        cube([24,22,6]);
+      translate([155/2-9,(28-22.2)/2,-2]) {
+        cube([24,22.2,6]);
         }
       }
     }
