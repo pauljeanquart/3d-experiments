@@ -1,24 +1,29 @@
 $fn = 99;
-cubeSize = 22;
+postSize = 22;
+postHeight = 60;
+
+width = 39;
+union(){
 difference() {
-    translate([-1,-1,1]) {
- cube([50,45,60]);
-        }
- 
-# cup();
+  translate([-2,-2,1]) { cube([52,width + 4,62]);    }
+  cup(offset=5, w=width);
+}
+translate([24,width/2,60]){
+#post();
+}
 }
 
 
-module cup() {
+module cup(offset, w) {
 CubePoints = [
   [  0,  0,  0 ],  //0
   [ 48,  0,  0 ],  //1
-  [ 48,  43,  0 ],  //2
-  [  0,  43,  0 ],  //3
-  [  3.5,  0,  59 ],  //4
-  [ 41+3.5,  0, 59],  //5
-  [ 41+3.5,  43,  59],  //6
-  [  3.5,  43,  59 ]]; //7
+  [ 48,  w,  0 ],  //2
+  [  0,  w,  0 ],  //3
+  [  offset,  0,  59 ],  //4
+  [ 48-offset,  0, 59],  //5
+  [ 48-offset,  w,  59],  //6
+  [  offset,  w,  59 ]]; //7
   
 CubeFaces = [
   [0,1,2,3],  // bottom
@@ -33,10 +38,10 @@ polyhedron( CubePoints, CubeFaces );
 
 module post() {
 union() {
-    cylinder(h = 10,d = 30,center = false);
-    translate([cubeSize/-2,cubeSize/-2,0]) {
-    cube([cubeSize,cubeSize,10]);
+    cylinder(h = postHeight,d = 30,center = false);
+    translate([postSize/-2,postSize/-2,0]) {
+    cube([postSize,postSize,postHeight]);
     }
-    cylinder(h = 20,d = 5,center = false);
+   // cylinder(h = 20,d = 5,center = false);
 }
 }
