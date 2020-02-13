@@ -2,15 +2,29 @@
 $fn = 99; // number of faces
 
 width = 39;
-union()
-{
-    difference()
+
+
+support();
+
+module support() {
+    union()
     {
-        translate([ -2, -2, 0 ]) { cube([ 52, width + 4, 65 ]); }
-        translate([ 0, 0, -1]) { cup(offset = 5, w = width); }
+        difference()
+        {
+            translate([ -2, -2, 0 ]) { cube([ 52, width + 4, 65 ]); }
+            translate([ 0, 0, -1]) { cup(offset = 5, w = width); }
+        }
+        postHeight = 120;
+        translate([ 24, width / 2, 0 ]) { post(22, postHeight); }
+        translate([24,width / 2,60]) {outsidePost(height = 60, diameter = 40.5);}
     }
-    postHeight = 120;
-    translate([ 24, width / 2, 0 ]) { post(22, postHeight); }
+}
+
+module outsidePost(height, diameter) {
+    difference(){
+    cylinder(h = height, d = diameter + 8, center = false);
+      #  translate([0,0,-1]) { cylinder(h = height+2, d = diameter, center = false);}
+    }
 }
 
 module cup(offset, w)
