@@ -3,27 +3,36 @@ $fn = 99; // number of faces
 
 width = 39;
 
-
 support();
 
-module support() {
+module
+support()
+{
     union()
     {
         difference()
         {
             translate([ -2, -2, 0 ]) { cube([ 52, width + 4, 65 ]); }
-            translate([ 0, 0, -1]) { cup(offset = 5, w = width); }
+            translate([ 0, 0, -1 ]) { cup(offset = 5, w = width); }
         }
         postHeight = 120;
         translate([ 24, width / 2, 0 ]) { post(22, postHeight); }
-        translate([24,width / 2,60]) {outsidePost(height = 60, diameter = 40.5);}
+        translate([ 24, width / 2, 60 ])
+        {
+            outsidePost(height = 60, diameter = 40.5);
+        }
     }
 }
 
-module outsidePost(height, diameter) {
-    difference(){
-    cylinder(h = height, d = diameter + 8, center = false);
-      #  translate([0,0,-1]) { cylinder(h = height+2, d = diameter, center = false);}
+module outsidePost(height, diameter)
+{
+    difference()
+    {
+        cylinder(h = height, d = diameter + 8, center = false);
+        translate([ 0, 0, -1 ])
+        {
+            cylinder(h = height + 2, d = diameter, center = false);
+        }
     }
 }
 
@@ -46,7 +55,7 @@ module cup(offset, w)
         [ 7, 6, 5, 4 ], // top
         [ 5, 6, 2, 1 ], // right
         [ 6, 7, 3, 2 ], // back
-        [ 7, 4, 0, 3 ] // left
+        [ 7, 4, 0, 3 ]  // left
     ];
 
     polyhedron(CubePoints, CubeFaces);
@@ -56,8 +65,8 @@ module post(diameter, height)
 {
     union()
     {
-        cylinder(h = height,, d = 30, center = false);
-        translate([ diameter / -2, , , diameter / -2, 0 ])
+        cylinder(h = height, , d = 30, center = false);
+        translate([diameter / -2, diameter / -2, 0 ])
         {
             cube([ diameter, diameter, height ]);
         }
