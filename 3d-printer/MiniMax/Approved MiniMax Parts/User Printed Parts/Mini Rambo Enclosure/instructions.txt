@@ -1,0 +1,6 @@
+The enclosure consists of 3 separate prints.  This is considered a bit more advanced print due just to the physical size.  We would encourage you to master basic printing skill before attempting this print.
+
+The center section has 8 areas that need to be cut away to install M3 nuts. This area is hidden behind built in support structure.  The area that gets cut away is 3.5 - 7.5mm from the top and bottom on each of the curved section on the outside of the enclosure.
+
+A fan mounting section is included in the print but should not be needed.  If you decided to mount a fan cut away the grill for better air flow.
+

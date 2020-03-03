@@ -1,0 +1,34 @@
+
+
+Files included in this zip.
+
+
+
+Minimax cable chain all printed
+
+
+
+
+Minimax cable chain for factory chain:  These chain pieces are only for the Y axis.  The smaller part mounts to the hotend carriage using the two belt clip screws to the rear.  The larger piece mounts to the rear left Z Plate using one screw.  The large hole in the part fits over the 5mm Screw head on the Z plate.  The small 3mm screw is used with a nut to mount the rear piece.
+
+
+
+Foot Mount :  You will need 4 of these parts they are used to attach the rubber feet to the printer. Refer to the 3D pdf for proper placement.
+
+
+Minimax Guide Tube:  This part hold the guide tube to the Z extrusion.  Remove the top right cover plate screw and install this mount at that location.  You will need a M3 screw and m3 Nut for the clamping section
+
+
+Print Fan Mount Back:  Use this fan mount if you have a single print cooling fan. It mounts to the right side of the extruder carriage plate using m3 screws and nuts.
+
+
+Print Fan Mount Left: To provide better cooling use two 40mm fans and mount with the Left and Right fan mounts.  The Left mount is attached to the left side of the extruder using two m3 screws and nuts. Use which ever screw you have the most of left over from the build of the kit.  Length does not matter.
+
+
+Print Fan Mount Right:  To provide better cooling use two 40mm fans and mount with the Left and Right fan mounts.  The Right mount is attached to the right side of the extruder using two m3 screws and nuts.Use which ever screw you have the most of left over from the build of the kit.  Length does not matter.
+
+
+Minimax Z motor brace:  Mount this to the extrusion just below the Z motor using a m5 screw and a T nut.  Press the top of the printed part until it is firmly pressed against the motor.  This part will prevent the motor mount plate from flexing and possibly causing slight Z wobble issues.
+
+
+minimax screw alignment tool:  You can use this part to help accurately set the spacing of the leadscrew in the Z axis.  The 5mm hole goes over the top of the leadscrew.  The wider flat side goes against the Z extrusions.  You will have to loosen the 4 screw holding the Y extrusion in place to use this setting tool, then re-level the bed and set the Z height.  only use this if you are having issues with Z wobble in your prints.  Use the Z motor brace and properly set the wheel tension first.
