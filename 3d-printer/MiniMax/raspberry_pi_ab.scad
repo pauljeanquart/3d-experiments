@@ -10,7 +10,7 @@
 // design origin is middle of PCB
 //
 
-part = "top"; // [ top, bottom, all, demo ]
+part = "bottom"; // [ top, bottom, all, demo ]
 
 have_plugrow = 0; // [ 1:true, 0:false ]
 have_open_plugrow = 0; // [ 1:true, 0:false ]
